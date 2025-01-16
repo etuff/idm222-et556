@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'helvetica';
-    src: url(../idm222-et556/font/Helvetica.ttf);
+    font-family: 'segoeui';
+    src: url(../idm222-et556/font/segoe-ui-light.ttf);
     font-style: normal;
     font-display: swap;
     font-weight: 100 900;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'bold';
-    src: url(../idm222-et556/font/Helvetica-Bold.ttf);
+    src: url(../idm222-et556/font/segoeuithibd.ttf);
     font-style: normal;
     font-display: swap;
     font-weight: 100 900;
@@ -25,15 +25,20 @@ html {
     --gray: #A2ABAB;
     --black: black;
 
-    --font: 'helvetica', Arial, sans-serif;
+    --font: 'segoeui', Arial, sans-serif;
     --font: 'bold', Arial, sans-serif; 
 
 }
 
+* {
+    box-sizing: border-box;
+  } 
 
 body{
     font-family: var(--font);
     margin: 0;
+    line-height: 1.6;
+    max-width: 680px;
 }
 
 header {
@@ -104,12 +109,12 @@ nav {
         }
       }
     }
-  }
+}
 
 /* Show nav when checkbox is checked */
 .nav-toggle:checked ~ nav {
     right: 0;
-  }
+}
     
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
     transform: rotate(45deg);
@@ -123,3 +128,29 @@ nav {
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
     transform: rotate(-45deg);
   }
+
+  /* welcome photo */
+  .welcome {
+    background-color: var(--blue-black);
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+/* Scripture */
+.scripture {
+    background-color: var(--yellow);
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+}
