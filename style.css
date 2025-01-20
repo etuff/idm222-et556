@@ -101,6 +101,7 @@ nav {
          margin-bottom: 1.3rem;
          display: flex;
          justify-content: flex-end;
+         font-family: var(--bold);
     
         a {
           color: var(--black);
@@ -181,4 +182,14 @@ nav {
             margin-top: 0;
         }
     }
+}
+
+
+/* footer*/
+footer {
+    background-color: var(--blue-black);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
 }
