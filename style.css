@@ -85,7 +85,7 @@ nav {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     width: 18.75rem;
-    position: fixed;
+    position:absolute;
     right: -300px;
     top: 0;
     z-index: 1000;
@@ -101,7 +101,7 @@ nav {
          margin-bottom: 1.3rem;
          display: flex;
          justify-content: flex-end;
-         font-family: var(--bold);
+         
     
         a {
           color: var(--black);
