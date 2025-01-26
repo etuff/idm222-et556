@@ -85,7 +85,7 @@ nav {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     width: 18.75rem;
-    position:absolute;
+    position:fixed;
     right: -3000px;
     top: 0;
     z-index: 1000;
