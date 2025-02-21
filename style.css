@@ -233,7 +233,7 @@ nav {
   a {
     color: var(--white);
     text-decoration: none;
-    background-color: var(--blue-black);
+    background-color: var(--blue);
     border-radius: 5px;
     padding: 3px 6px;
   }
@@ -245,7 +245,7 @@ nav {
 #combo {
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 40px;
 
   .socials {
     align-self: center;
@@ -258,6 +258,16 @@ nav {
       align-self: center;
     }
   }
+}
+
+/* ministry */
+.ministries {
+  padding: 15px;
+  background-color: var(--gray-white);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
+  rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* footer*/
