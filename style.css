@@ -216,7 +216,7 @@ nav {
 .wrap {
   margin: 30px;
 }
-#connectwithus {
+.pagetitle {
   margin: 0;
   background-color: var(--yellow);
   padding: 10px;
@@ -228,7 +228,7 @@ nav {
   padding: 15px;
   background-color: var(--gray-white);
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin: 30px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
   rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
@@ -238,12 +238,20 @@ nav {
   }
 
   a {
-    color: var(--white);
+    color: var(--blue);
     text-decoration: none;
-    background-color: var(--blue);
+    background-color: var(--white);
     border-radius: 5px;
     padding: 3px 6px;
   }
+
+}
+
+iframe {
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
+  rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
 
@@ -414,14 +422,14 @@ footer {
   /* connect page */
   .head{
     background-color: var(--gray);
-    padding: 25px;
+    padding: 25px 35px;
     margin: 0;
     display: flex;
     justify-content: space-between;
 
-    #lefthead {
+    .lefthead {
 
-      #homelogo {
+      .homelogo {
         width: 60px;
       }
     }
@@ -445,19 +453,45 @@ footer {
     }
   }
 
+  #connectwrap {
+    flex-direction: column;
+  }
+  
   #addy {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     #lolo {
       max-width: 500px;
     }
 
-    #mapp {
-      display: block;
+    iframe {
       max-width: 500px;
+      height: 320px;
     }
+ }
+
+ /* ministry page */
+ #ministrywrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gap: 30px; */
+
+  .ministries {
+    max-width: 300px;
+    width: calc(33.33%, 30px);
   }
+ }
+
+ footer {
+  font-size: 16px;
+
+  #menu {
+    display: none;
+  }
+ }
 
 
 }

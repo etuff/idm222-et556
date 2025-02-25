@@ -9,7 +9,7 @@
 
     <link rel="icon" href="MEDIA/PIWCLOGO.png" type="image/png">
 </head>
-<body class="otherbody">
+<body>
 
     <!-- header -->
     <header>
@@ -35,10 +35,11 @@
         </div>
     </header>
 
+    <!-- hidden header, only displays in min-width: 550px -->
     <div class="head" hidden>
-        <div id="lefthead">
+        <div class="lefthead">
             <a href="index.html">
-            <img id="homelogo" src="MEDIA/PIWCLOGO.png" alt="piwc"> </a>
+            <img class="homelogo" src="MEDIA/PIWCLOGO.png" alt="piwc"> </a>
         </div>
 
         <div id="righthead">
@@ -50,9 +51,9 @@
     </div>
 
     <!-- Connect with us -->
-     <h2 id="connectwithus" > Connect With Us </h2>
+     <h2 class="pagetitle" > Connect With Us </h2>
 
-     <div class="wrap">
+     <div class="wrap" id="connectwrap">
         <div id="addy">
             <div id="lolo">
                 <h2>Visit us</h2>
@@ -65,7 +66,6 @@
                 <p><a href="tel:+1234567890">+1 (215) 307-6352</a> </p>
             </div>
 
-            <div id="mapp">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6118.440000049761!2d-75.1867833!3d39.93646839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c66f2608be81%3A0x5b2593beb9f68002!2s2530%20Wharton%20St%2C%20Philadelphia%2C%20PA%2019146!5e0!3m2!1sen!2sus!4v1736207601844!5m2!1sen!2sus" 
                     width="100%" 
@@ -74,9 +74,10 @@
                     allowfullscreen="" 
                     loading="lazy">
                 </iframe>
-            </div>
+            
 
         </div>
+
         <hr>
     
         <!-- social media -->
