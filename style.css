@@ -174,7 +174,6 @@ ul {
 
 /* animation and effects */
 a {
-  transition: opacity 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -190,11 +189,11 @@ a {
   }
 }
 
-a:hover, .give:hover, #home:hover, iframe:hover, .socials:hover, .ministries:hover {
-  opacity: 0.5; 
+a:hover, .give:hover, #home:hover, iframe:hover, .socials:hover, .ministries:hover, .service:hover {
+  transform: scale(1.1); 
 }
 
-a:active, .give:active, #home:active, iframe:active, .socials:active, .ministries:active {
+a:active, .give:active, #home:active, iframe:active, .socials:active, .ministries:active, .service:active {
   transform: translate(2px, 2px);
 }
 
@@ -262,7 +261,6 @@ a:active, .give:active, #home:active, iframe:active, .socials:active, .ministrie
   rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
   img {
-    margin: 5px;
     width: 25px;
   }
 
@@ -290,7 +288,7 @@ iframe {
 #combo {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 35px;
 }
 
 .socials {
@@ -299,12 +297,55 @@ iframe {
   transition: transform 0.3s ease-in-out;
 
   img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 20%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
     align-self: center;
   }
+}
+
+
+
+.graycont {
+  background-color: var(--gray);
+  padding: 25px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graybg {
+  margin-top: 25px;
+}
+
+.service {
+  padding: 15px;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
+  rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  justify-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  h2 {
+    margin: 10px;
+    justify-self: center;
+  }
+
+  p {
+    font-family: var(--font);
+  }
+
+
 }
 
 /* ministry */
@@ -332,6 +373,10 @@ iframe {
     background-color: var(--blue);
     border-radius: 5px;
     padding: 5px 7px;
+  }
+
+  h2 {
+    margin: 10px;
   }
 }
 
@@ -370,7 +415,7 @@ footer {
 
 }
 
-@media (min-width: 550px) {
+@media (min-width: 620px) {
 
   /* index */
   header{
@@ -491,10 +536,23 @@ footer {
     flex-direction: column;
   }
   
+ 
+
+
+ 
+
+  .service {
+    justify-self: center;
+    max-width: 450px;
+    width: 100%; 
+  }
+
+
+ @media (min-width: 850px) {
+
   #addy {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 
     #lolo {
       max-width: 500px;
@@ -506,29 +564,47 @@ footer {
     }
  }
 
- /* ministry page */
- #ministrywrap {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 30px; 
-  justify-items: center;
-}
+  .graybg {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    gap: 40px;
 
-.ministries {
-  max-width: 300px;
-  width: 100%; 
-}
+  
+    .service {
+      width: calc(33.33% - 35px);
+      max-width: 400px;
+      min-width: 200px;
+      /* width: 100%;  */
+    }
+  }
+
+ }
+
+
+  /* ministry page */
+  #ministrywrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    justify-items: center;
+    margin-inline: auto;
+    max-width: 1200px;
+  }
+
+  .ministries {
+    max-width: 300px;
+    width: 100%; 
+  }
 
 
 
 
  footer {
   font-size: 16px;
-
-  #menu {
-    display: none;
-  }
  }
 
-
+ #menu {
+  display: none;
+}
 }
