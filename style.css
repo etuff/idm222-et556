@@ -650,6 +650,7 @@ footer {
     justify-items: center;
     margin-inline: auto;
     max-width: 1200px;
+    margin-top: 50px;
   }
 
   .ministries {
